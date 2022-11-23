@@ -49,7 +49,13 @@ func (j jaegerMarshaler) Marshal(traces ptrace.Traces, topic string) ([]*sarama.
 				errs = multierr.Append(errs, err)
 				continue
 			}
-			key := []byte(span.TraceID.String())
+			var orgId string
+			for _, v := range span.Process.Tags {
+				if v.Key == "orgId" {
+					orgId = v.VStr
+				}
+			}
+			key := []byte(span.TraceID.String() + orgId)
 			messages = append(messages, &sarama.ProducerMessage{
 				Topic: topic,
 				Value: sarama.ByteEncoder(bts),
