@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter
+module github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter
 
 go 1.18
 
