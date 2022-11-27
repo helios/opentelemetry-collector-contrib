@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/config"
 	"go.opentelemetry.io/collector/consumer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+	"github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter"
 )
 
 const (

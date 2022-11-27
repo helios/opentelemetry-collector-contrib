@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/Shopify/sarama v1.37.2
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0
+	github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0
 	github.com/stretchr/testify v1.8.1
 	github.com/testcontainers/testcontainers-go v0.15.0
 	go.opentelemetry.io/collector v0.66.0
@@ -94,7 +94,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 

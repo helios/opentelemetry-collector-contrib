@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+	"github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter"
 )
 
 func TestNewReceiver_invalid_version_err(t *testing.T) {

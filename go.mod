@@ -3,6 +3,7 @@ module github.com/open-telemetry/opentelemetry-collector-contrib
 go 1.18
 
 require (
+	github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/alibabacloudlogserviceexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awscloudwatchlogsexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter v0.66.0
@@ -26,7 +27,6 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter v0.66.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter v0.66.0
@@ -727,7 +727,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaege
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter => ./exporter/jaegerthrifthttpexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ./exporter/kafkaexporter
+replace github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter => ./exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter => ./exporter/loadbalancingexporter
 

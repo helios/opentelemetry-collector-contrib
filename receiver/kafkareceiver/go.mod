@@ -6,8 +6,8 @@ require (
 	github.com/Shopify/sarama v1.37.2
 	github.com/apache/thrift v0.17.0
 	github.com/gogo/protobuf v1.3.2
+	github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.66.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin v0.66.0
@@ -73,7 +73,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 

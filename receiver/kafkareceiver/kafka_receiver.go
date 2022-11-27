@@ -27,7 +27,7 @@ import (
 	"go.opentelemetry.io/collector/obsreport"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+	"github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter"
 )
 
 const (

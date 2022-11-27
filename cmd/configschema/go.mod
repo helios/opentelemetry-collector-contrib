@@ -242,6 +242,7 @@ require (
 	github.com/hashicorp/memberlist v0.3.1 // indirect
 	github.com/hashicorp/nomad/api v0.0.0-20220809212729-939d643fec2c // indirect
 	github.com/hashicorp/serf v0.9.8 // indirect
+	github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0 // indirect
 	github.com/hetznercloud/hcloud-go v1.35.2 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
@@ -333,7 +334,6 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter v0.66.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.66.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter v0.66.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.66.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter v0.66.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter v0.66.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter v0.66.0 // indirect
@@ -727,7 +727,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaege
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter => ../../exporter/jaegerthrifthttpexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/helios/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter => ../../exporter/loadbalancingexporter
 
