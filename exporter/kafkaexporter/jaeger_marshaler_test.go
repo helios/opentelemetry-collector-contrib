@@ -29,8 +29,12 @@ import (
 )
 
 func TestJaegerMarshaler(t *testing.T) {
+	orgId := "xxx"
 	td := ptrace.NewTraces()
-	span := td.ResourceSpans().AppendEmpty().ScopeSpans().AppendEmpty().Spans().AppendEmpty()
+	rss := td.ResourceSpans().AppendEmpty()
+	att := rss.Resource().Attributes()
+	att.PutStr("orgId", orgId)
+	span := rss.ScopeSpans().AppendEmpty().Spans().AppendEmpty()
 	span.SetName("foo")
 	span.SetStartTimestamp(pcommon.Timestamp(10))
 	span.SetEndTimestamp(pcommon.Timestamp(20))
@@ -41,7 +45,7 @@ func TestJaegerMarshaler(t *testing.T) {
 
 	batches[0].Spans[0].Process = batches[0].Process
 	jaegerProtoBytes, err := batches[0].Spans[0].Marshal()
-	messageKey := []byte(batches[0].Spans[0].TraceID.String())
+	messageKey := []byte(batches[0].Spans[0].TraceID.String() + orgId)
 	require.NoError(t, err)
 	require.NotNil(t, jaegerProtoBytes)
 
