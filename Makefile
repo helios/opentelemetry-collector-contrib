@@ -9,7 +9,7 @@ VERSION=$(shell git describe --always --match "v[0-9]*" HEAD)
 BUILD_INFO=-ldflags "-X $(BUILD_INFO_IMPORT_PATH).Version=$(VERSION)"
 
 COMP_REL_PATH=internal/components/components.go
-MOD_NAME=github.com/open-telemetry/opentelemetry-collector-contrib
+MOD_NAME=github.com/helios/opentelemetry-collector-contrib
 
 GROUP ?= all
 FOR_GROUP_TARGET=for-$(GROUP)-target

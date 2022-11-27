@@ -14,9 +14,9 @@
 
 module-sets:
   contrib-base:
-    version: v0.66.0
+    version: v0.66.1
     modules:
-      - github.com/open-telemetry/opentelemetry-collector-contrib
+      - github.com/helios/opentelemetry-collector-contrib
       - github.com/open-telemetry/opentelemetry-collector-contrib/cmd/configschema
       - github.com/open-telemetry/opentelemetry-collector-contrib/cmd/mdatagen
       - github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen
